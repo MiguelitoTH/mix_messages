@@ -3,11 +3,19 @@ const aboutSun =['The sun often thought of as warm and bright','The sund often b
 const quoteSigns =['try to walk today with warmth and balance','with your warmth like try to brighten someone up today','doing what makes you happy can allow you to brigten you\'re self like the sun'];
 
 let randomMizer = Math.floor(Math.random()*3);
+let sunRandomMessage = [];
 
-const checksRandomSign = sign =>{
+const checksRandomSign = () =>{
 let newSign = signs[randomMizer];
 let newAboutSun = aboutSun[randomMizer];
-return `${newSign}, ${newAboutSun}`;
-};
+let newQuoteSigns = quoteSigns[randomMizer]
 
-console.log(checksRandomSign(signs));
+if(newSign === 'Sun'){
+sunRandomMessage.push('Your sign');
+sunRandomMessage.push(newSign);
+sunRandomMessage.push(newQuoteSigns);
+sunRandomMessage.join(' ');
+};
+console.log(sunRandomMessage);
+}
+checksRandomSign(signs);
