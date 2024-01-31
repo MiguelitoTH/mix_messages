@@ -34,6 +34,7 @@ return sunRandomMessage.join(' ');
 }else if(newSign === 'Earth'){
 sunRandomMessage.push('Your sign is: ' +signs[randomMizer]+ ', about the Earth: '+aboutEarth[randomMizer2]+', your sign\'s quote this time is: ' +quoteEarth[randomMizer3]+'.');
 return sunRandomMessage.join(' ');
+
 };
 }
 console.log(checksRandomSign());
